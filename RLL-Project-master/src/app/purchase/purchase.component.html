@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <script src="https://use.fontawesome.com/72f3d00eee.js"></script>
+</head>
+	<body class="container">
+		<nav class="top-nav">
+			<h1 class="title">Inventory System</h1>
+			<div class="top-nav-right">
+				<h5 class="title-1">Welcome Admin</h5>
+				<button>Log Out</button>
+			</div>
+		</nav>
+		<div class="main">
+			<!-- <section class="left-section">
+				<nav class="left-nav">
+					<a href="" class="link">Item</a>
+					<a href="purchase" class="link">Purchase</a>
+					<a href="" class="link">Sale</a>
+					<a href="" class="link">Customer</a>
+					
+				</nav>
+			</section>  -->
+			<section class="right-section">
+				<h2 class="right-section-title">Purchase Details</h2>
+				<div class="form-section">
+					<div>
+						<p class="form-title">Item Number</p>
+						<input class="form-input" type="text" />
+					</div>
+					<div>
+						<p class="form-title">Purchase Date</p>
+						<input class="form-input" type="date" />
+					</div>
+					<div>
+						<p class="form-title">Purchase ID</p>
+						<input class="form-input" type="text" />
+					</div>
+				</div>
+				<div class="form-section-2">
+					<div>
+						<p class="form-title">Item Name</p>
+						<input class="form-input" type="text" />
+					</div>
+                    <div>
+						<p class="form-title">Current Stock</p>
+						<input class="form-input" type="text" />
+					</div>
+					<tr>
+						<td>Vendor Name: </td>
+						<td> <select name="Vendor Name">
+						<option value="abc company">ABC company
+						<option value="BAC Company">BAC Company
+						
+						</select>
+						</td>
+						</tr>
+                        
+					</div>
+				<div class="form-section">
+					
+						
+					<div>
+						<p class="form-title">Quantity</p>
+						<input class="form-input" type="text" />
+					</div>
+					<div>
+						<p class="form-title">Unit Price</p>
+						<input class="form-input" type="text" />
+					</div>
+					<div>
+						<p class="form-title">Total cost</p>
+						<input class="form-input" type="text" />
+					</div>
+				</div>
+				<div class="button">
+					<button (click)="alertbar()" class="btn btn-1">Add Purchase</button> 
+					 <button (click)="alertbar()" class="btn btn-2">Update</button> 
+					<button class="btn btn-3">Clear</button>
+				</div>
+			</section>
+		 </div>
+	</body>
+</html> 

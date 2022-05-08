@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <script src="https://use.fontawesome.com/72f3d00eee.js"></script>
+		
+</head>
+
+	<body class="container">
+		   <nav class="top-nav">
+			<h1 class="title">Inventory System</h1>
+			<div class="top-nav-right">
+				<h5 class="title-1">Welcome Admin</h5>
+				<button>Log Out</button>
+			</div>
+		</nav> 
+		<div class="main">
+			<!-- <section class="left-section">
+				<nav class="left-nav">
+					<a routerLink="item" class="link">Item</a>
+					<a routerLink="purchase" class="link">Purchase</a>
+					<a routerLink="sale" class="link">Sale</a>
+					<a routerLink="customer" class="link">Customer</a>
+				
+				</nav>
+				
+			</section>  -->
+			<section class="right-section">
+				<h2 class="right-section-title">Item Details</h2>
+				
+                  
+            <!-- <p class="input-file-wrapper"> -->
+                <!-- <label for="upload"> Item</label>
+                <input type="file" name="" id="upload"> -->
+              <!-- </p>   -->
+              <div class="form-section">
+					<div>
+						<p class="form-title">Item Number</p>
+						<input class="form-input" type="text" [(ngModel)]="itemNumber" [ngModelOptions]="{standalone: true}"/>
+					</div>
+					<div>
+						<p class="form-title">Product ID</p>
+						<input class="form-input" type="text" [(ngModel)]="productId" [ngModelOptions]="{standalone: true}" />
+					</div>
+                    <div class="form-section-3"></div>
+					
+				</div>
+				<div class="form-section-3">
+					<div>
+						<p class="form-title">Item Name</p>
+						<input class="form-input" type="text" [(ngModel)]="itemName" [ngModelOptions]="{standalone: true}"/>
+					</div>
+					
+					<div>
+						<p class="form-title">Description</p>
+						<input class="form-input" type="text" [(ngModel)]="desc" [ngModelOptions]="{standalone: true}"/>
+					</div>
+        
+				</div>
+				<div class="form-section">
+          <tr>
+            <td>Status :</td>
+            <td> <select name="Status" [(ngModel)]="status" [ngModelOptions]="{standalone: true}">
+            <option value="active">Active
+            <option value="inactive">Inactive
+            
+            </select>
+            </td>
+            </tr> 
+            <div>
+              <p class="form-title">Discount %</p>
+              <input class="form-input" type="text" [(ngModel)]="discount" [ngModelOptions]="{standalone: true}"/>
+            </div>
+					
+					
+					<div>
+						<p class="form-title">Quantity</p>
+						<input class="form-input" type="text" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}" />
+					</div>
+					<div>
+						<p class="form-title">Unit Price</p>
+						<input class="form-input" type="text" [(ngModel)]="unitPrice" [ngModelOptions]="{standalone: true}"/>
+					</div>
+					<div>
+						<p class="form-title">Total Price</p>
+						<input class="form-input" type="text" [(ngModel)]="totalStock" [ngModelOptions]="{standalone: true}"/>
+					</div>
+				</div>
+				<div class="button">
+					 <!-- <button (click)="alertbar()" class="button button2">Add Item</button> -->
+					 <button (click)="addItem()" class="btn btn-1">Add item</button> 
+					<!-- <button class="btn btn-2">Update</button> -->
+                    <!-- <button class="btn btn-3">Delete</button> -->
+					<!-- <button class="btn btn-4">Clear</button> -->
+				</div>
+			</section>
+    </div>
+	</body>
+</html> 

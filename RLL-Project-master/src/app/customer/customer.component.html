@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <script src="https://use.fontawesome.com/72f3d00eee.js"></script>
+  </head>
+  <body class="container">
+    <nav class="top-nav">
+      <h1 class="title">Inventory System</h1>
+      <div class="top-nav-right">
+        <h5 class="title-1">Welcome Admin</h5>
+        <button>Log Out</button>
+      </div>
+    </nav>
+    <div class="main">
+      <!-- <section class="left-section">
+				<nav class="left-nav">
+					<a href="" class="link">Item</a>
+					<a href="" class="link">Purchase</a>
+					<a href="" class="link">Sale</a>
+					<a href="customer" class="link">Customer</a>
+					
+				</nav>
+			</section>  -->
+      <section class="right-section">
+        <h2 class="right-section-title">Customer Details</h2>
+        <div class="form-section">
+          <div>
+            <p class="form-title">Full Name*</p>
+            <input
+              class="form-input"
+              type="text"
+              [(ngModel)]="fullname"
+              [ngModelOptions]="{ standalone: true }"
+            />
+          </div>
+          <div>
+            <p>
+              <td>Status</td>
+              <td>
+                <select
+                  name="Status"
+                  [(ngModel)]="status"
+                  [ngModelOptions]="{ standalone: true }"
+                >
+                  <option value="Active">Active </option
+                  ><option value="Inactive">Inactive </option></select
+                >
+              </td>
+            </p>
+          </div>
+          <!-- <div>
+						<p class="form-title">Customer ID</p>
+						<input class="form-input" type="text" [(ngModel)]="customerID" [ngModelOptions]="{standalone: true}" />
+					</div> -->
+        </div>
+        <div class="form-section-2">
+          <div>
+            <p class="form-title">Phone(mobile)*</p>
+            <input
+              class="form-input"
+              type="number"
+              [(ngModel)]="phone"
+              [ngModelOptions]="{ standalone: true }"
+              maxlength="10"
+            />
+          </div>
+          <div>
+            <p class="form-title">Phone 2</p>
+            <input
+              class="form-input"
+              type="text"
+              [(ngModel)]="phone2"
+              [ngModelOptions]="{ standalone: true }"
+            />
+          </div>
+          <div>
+            <p class="form-title">Email</p>
+            <input
+              class="form-input"
+              type="email"
+              [(ngModel)]="email"
+              [ngModelOptions]="{ standalone: true }"
+            />
+          </div>
+        </div>
+
+        <div>
+          <p class="form-title">Address*</p>
+          <input
+            class="form-input"
+            type="text"
+            [(ngModel)]="address"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+
+        <div>
+          <p class="form-title">Address 2</p>
+          <input
+            class="form-input"
+            type="text"
+            [(ngModel)]="address2"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+
+        <div class="form-section">
+          <div>
+            <p class="form-title">city</p>
+            <input
+              class="form-input"
+              type="text"
+              [(ngModel)]="city"
+              [ngModelOptions]="{ standalone: true }"
+            />
+          </div>
+          <div>
+            <p class="form-title">District</p>
+            <input
+              class="form-input"
+              type="text"
+              [(ngModel)]="district"
+              [ngModelOptions]="{ standalone: true }"
+            />
+          </div>
+        </div>
+        <div class="button">
+          <!-- <button (click)="alertbar()" class="button button2">Add Customer</button> -->
+          <button (click)="add()" class="btn btn-1">Add Customer</button>
+          <!-- <button class="btn btn-2">Update</button>
+					<button class="btn btn-3">Delete</button>
+					<button class="btn btn-4">Clear</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

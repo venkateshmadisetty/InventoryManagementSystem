@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	   /* background-image:url('https://ps-attachments.s3.amazonaws.com/716856a2-99e4-4460-87f6-30f36b7a60d9/vcPQi0c-nOlT1h1nd0ZHvg.png') ;   */
+}
+ /* .container{
+ background-image: url('https://taxguru.in/wp-content/uploads/2021/10/Young-businessman-shows-the-word-on-the-virtual-display-of-the-future-Inventory-management-1280x720.jpg'); */
+	 */
+
+/* .container {
+	width: 1400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} */
+.top-nav {
+	display: flex;
+	justify-content: space-between;
+	 background-color: blue; 
+	color: white;
+	padding: 15px 200px;
+ 
+}
+.top-nav-right {
+	display: flex;
+	gap: 0 15px;
+	align-items: center;
+}
+.title-1 {
+	font-size: 15px;
+	font-weight: 400;
+}
+.top-nav-right > button {
+	border: 0;
+	background: transparent;
+	color: white;
+}
+.main {
+	display: flex;
+	margin-top: 50px;
+	gap: 0 25px;
+	justify-content: center;
+	align-items: center;
+	width:1000px;
+}
+.left-section {
+	background-color: white;
+	width: 25%;
+}
+.left-nav {
+	display: flex;
+	flex-direction: column;
+	gap: 5px 0;
+}
+.link {
+	text-decoration: none;
+	color: rgb(70, 70, 240);
+	padding: 8px;
+}
+.link:hover {
+	background-color: white;
+	color: white;
+}
+.right-section {
+	width: 75%;
+	border: 1px solid gainsboro;
+	border-radius: 5px;
+}
+.right-section-title {
+	font-size: 15px;
+	font-weight: 800;
+	background-color: gainsboro;
+	padding: 10px;
+	border-bottom: 1px solid gray;
+}
+.form-section,
+.form-section-2 {
+	padding: 10px;
+	display: flex;
+	gap: 0 10px;
+}
+.form-title {
+	font-size: 15px;
+	padding-bottom: 5px;
+}
+.form-input {
+	border: 2px solid gainsboro;
+	border-radius: 5px;
+	height: 25px;
+	width: 99%;
+}
+.button {
+	padding: 10px;
+	display: flex;
+	gap: 0 10px;
+}
+.btn {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btn-1 {
+	background-color: rgb(9, 8, 85);
+	color: white;
+}
+.btn-2 {
+	background-color: rgb(5, 85, 61);
+	color: white;
+}
+.btn-3 {
+	background-color:rgb(124, 29, 45);
+	color: white;
+}
+.btn-4 {
+	background-color: gainsboro;
+	color: black;
+}
